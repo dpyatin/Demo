@@ -1,6 +1,6 @@
 package main;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -22,10 +22,10 @@ public class ParkingOffer {
 	Location location;
 	
 	@CreatedDate
-	private Date createdDate;
+	private LocalDateTime createdDate;
 	
 	@LastModifiedDate
-	private Date modifiedDate;
+	private LocalDateTime modifiedDate;
 	
 	public ParkingOffer(User user, Location location) {
 		this.user = user;

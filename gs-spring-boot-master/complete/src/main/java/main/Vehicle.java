@@ -2,16 +2,7 @@ package main;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
-@Entity
 public class Vehicle implements Serializable {
-	
-	@Id
-	@GeneratedValue
-	private long id;
 	
 	String brand;
 	String model;
@@ -24,4 +15,28 @@ public class Vehicle implements Serializable {
 	}
 	
 	public Vehicle() {}
+	
+	public String getBrand() {
+		return this.brand;
+	}
+	
+	public String getModel() {
+		return this.model;
+	}
+	
+	public String getColor() {
+		return this.color;
+	}
+	
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	
+	public void setModel(String model) {
+		this.model = model;
+	}
+	
+	public void setColor(String color) {
+		this.color = color;
+	}
 }

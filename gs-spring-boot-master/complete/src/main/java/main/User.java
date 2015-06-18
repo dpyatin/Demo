@@ -5,9 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class User {
 	private String nickname;
+	
 	private Vehicle vehicle;
 	
 	@Id
@@ -18,7 +20,7 @@ public class User {
 		this.nickname = nickname;
 	}
 	
-	public void setVehicle(Vehicle setVehicle) {
+	public void setVehicle(Vehicle vehicle) {
 		this.vehicle = vehicle;
 	}
 	

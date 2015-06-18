@@ -13,4 +13,6 @@ public class Location implements Serializable {
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
+	
+	
 }
